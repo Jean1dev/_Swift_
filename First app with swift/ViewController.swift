@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Legenda: UILabel!
+    
+    @IBOutlet weak var label1: UITextField!
+    
+    @IBAction func click(_ sender: Any) {
+        Legenda.text = label1.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("Teste")
     }
 
     override func didReceiveMemoryWarning() {
