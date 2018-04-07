@@ -12,8 +12,10 @@
 		F5057E3E207166150028EAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5057E3C207166150028EAF8 /* Main.storyboard */; };
 		F5057E40207166150028EAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5057E3F207166150028EAF8 /* Assets.xcassets */; };
 		F5057E43207166150028EAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5057E41207166150028EAF8 /* LaunchScreen.storyboard */; };
+		F5CCA3482079094600964600 /* FilmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCA3472079094600964600 /* FilmeModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXFileReference section */
 		F5057E35207166150028EAF8 /* ATM_Consultoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATM_Consultoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5057E38207166150028EAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5057E3A207166150028EAF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +23,7 @@
 		F5057E3F207166150028EAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5057E42207166150028EAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5057E44207166150028EAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CCA3472079094600964600 /* FilmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F5057E38207166150028EAF8 /* AppDelegate.swift */,
+				F5CCA3472079094600964600 /* FilmeModel.swift */,
 				F5057E3A207166150028EAF8 /* ViewController.swift */,
 				F5057E3C207166150028EAF8 /* Main.storyboard */,
 				F5057E3F207166150028EAF8 /* Assets.xcassets */,
@@ -137,6 +141,7 @@
 			files = (
 				F5057E3B207166150028EAF8 /* ViewController.swift in Sources */,
 				F5057E39207166150028EAF8 /* AppDelegate.swift in Sources */,
+				F5CCA3482079094600964600 /* FilmeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

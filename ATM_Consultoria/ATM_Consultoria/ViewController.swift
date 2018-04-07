@@ -10,10 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var filmes : [Filme] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var filme: Filme
+        filme = Filme(titulo: "teste", descricao: "descricao")
+        filmes.append(filme)
+        
+        
+        filme = Filme(titulo: "qwtfqweste", descricao: "dfqwfwqescricao")
+        filmes.append(filme)
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
