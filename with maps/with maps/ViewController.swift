@@ -24,6 +24,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         gerenciadorLocal.startUpdatingLocation()
     }
 
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let localizacaoUsuario: CLLocation = locations.last!
+        setPointOnMap(lat: localizacaoUsuario.coordinate.latitude, long: localizacaoUsuario.coordinate.longitude)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,8 +54,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapa.addAnnotation(anotacao)
     }
     
-    func setPointOnMap(){
+    func setPointOnMap(lat: CLLocationDegrees, long: CLLocationDegrees){
+        let latitude: CLLocationDegrees = lat
+        let longitude: CLLocationDegrees = long
+        let deltaLatitude: CLLocationDegrees = 0.2
+        let deltaLongitude: CLLocationDegrees = 0.2
         
+        let localizacao: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let areaVisualizacao:MKCoordinateSpan = MKCoordinateSpanMake(deltaLatitude, deltaLongitude)
+        
+        let regiao: MKCoordinateRegion = MKCoordinateRegionMake(localizacao, areaVisualizacao)
+        mapa.setRegion(regiao, animated: true)
     }
 
 }
